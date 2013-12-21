@@ -1,0 +1,23 @@
+{
+  "name": "brianshaler.com",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "nib": "~1.0.1",
+    "stylus": "~0.41.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-stylus": "~0.11.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-jst": "~0.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
