@@ -1,7 +1,6 @@
 <html>
 <head>
   <title>Brian Shaler</title>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
@@ -11,6 +10,19 @@
   <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
+  <div class="container">
+    <div class="cube-container unselected">
+      <div class="cube-holder unselected">
+        <div class="cube">
+          <div class="front face title"></div>
+          <div class="left face about"></div>
+          <div class="back face">back</div>
+          <div class="right face">right</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay fullsize"></div>
   <div class="btn-nav btn-left">
     <a href="#">
       <span class="fa fa-angle-left"></span>
@@ -20,18 +32,6 @@
     <a href="#">
       <span class="fa fa-angle-right"></span>
     </a>
-  </div>
-  <div class="container">
-    <div class="cube-container">
-      <div class="cube-holder">
-        <div class="cube">
-          <div class="front face title"></div>
-          <div class="left face about"></div>
-          <div class="back face">back</div>
-          <div class="right face">right</div>
-        </div>
-      </div>
-    </div>
   </div>
 </body>
 </html>

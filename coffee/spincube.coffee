@@ -28,6 +28,9 @@ class @SpinCube
     @div.html html
     animationName
   
+  clear: =>
+    @div.html ""
+  
   spinTo: (angle = 0) =>
     @fromAngle = @toAngle
     @toAngle = angle
