@@ -1,0 +1,25 @@
+.slideshow
+  img
+    position: absolute
+    xwidth: 100%
+    xheight: 100%
+    transform: translate3d(0, -100%, 0)
+  img.show
+    animation: show-slide 1s 1
+    transform: translate3d(0, 0, 0)
+  img.hide
+    animation: hide-slide 1s 1
+    transform: translate3d(0, -100%, 0)
+
+@keyframes show-slide
+  0%
+    transform: translate3d(0, -100%, 0)
+  100%
+    transform: translate3d(0, 0, 0)
+
+@keyframes hide-slide
+  0%
+    transform: translate3d(0, 0, 0)
+  100%
+    transform: translate3d(0, 100%, 0)
+

@@ -8,7 +8,7 @@ module.exports = (grunt) ->
         dest: "js/app.js"
     stylus:
       app:
-        src: "styl/**/*.styl"
+        src: ["styl/style.styl"]
         dest: "css/style.css"
     jst:
       compile:
@@ -23,7 +23,7 @@ module.exports = (grunt) ->
         files: "coffee/**/*.coffee"
         tasks: ["coffee"]
       stylus:
-        files: "styl/**/*.styl"
+        files: ["styl/**/*.styl"]
         tasks: ["stylus"]
       jst:
         files: "templates/**/*"

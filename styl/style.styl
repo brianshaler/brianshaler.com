@@ -1,4 +1,5 @@
 @import 'nib'
+@import 'config'
 
 *
   font-family: 'Montserrat', sans-serif
@@ -13,14 +14,102 @@
   font-weight: normal
   font-style: normal
 
+@import 'cube'
+@import 'nav'
+@import 'animations'
+@import 'slideshow'
+
+@import 'views/title'
+@import 'views/about'
+
 html, body
   margin 0
   padding 0
   overflow hidden
 
-@import 'cube'
-@import 'nav'
-@import 'views/title'
-@import 'views/about'
+.face
+  text-align: center
+
+.cube-container
+  h1, h2, h3, h4
+    text-align: center
+
+.show-after-selected
+  opacity: 0
+.unselected .show-after-selected
+  display: none
+
+.show-after-unselected
+  opacity: 0
+
+.center
+  text-align: center
+
+.face-content
+  margin: 0 0
+  transition: margin selectFaceTransitionTime*0.7 ease-in-out
+.previous .face-content
+  transition: margin selectFaceTransitionTime*1.3 ease-in-out
+
+//.cube-canvas
+//  position: absolute
+.over-canvas
+  transform: translate3d(0, 0, 1px)
+
+.selected
+  .face-content
+    margin: 5% 20%
+  .face
+    text-align: left
+  .show-after-selected
+    animation: show-after-selected selectFaceTransitionTime 1
+    opacity: 1
+  .hidden-when-selected
+    display: none
+
+.unselected
+  .show-after-unselected
+    animation: show-after-selected selectFaceTransitionTime 1
+    opacity: 1
+
+.has-not-tapped .show-if-tapped, .has-tapped .show-unless-tapped
+  display: none
+
+h1.with-bg, h2.with-bg, h3.with-bg, h4.with-bg
+  background-color: rgba(0, 0, 0, 0.4)
+  color: #fff
+  padding: 0.4em 0 0.3em
 
 
+.thumbnails
+  margin-right: -2em
+  img
+    float: left
+    width: 5em
+    height: 5em
+    margin: 0 1em 1em 0
+
+.popup-overlay
+  position: relative
+  top: 0
+  z-index: 99
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.65)
+  color: #fff
+  text-shadow: black 1px 1px 1px
+  .popup-container
+    width: 100%
+    height: 100%
+  .popup-content
+    height: 100%
+    padding: 5% 10%
+    img
+      float: left
+      max-width: 50%
+      max-height: 80%
+      margin-right: 5%
+    h1
+      margin-top: 0
+    p
+      line-height: 150%
